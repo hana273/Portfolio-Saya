@@ -453,6 +453,11 @@ a {
   object-fit: cover;
 }
 
+.skill-card img {
+  width: 100%;
+  height: auto;
+}
+
 /* ── CONTACT ───────────────────────────────────── */
 
 .sosial a{
@@ -880,4 +885,10 @@ body.dark-mode .counter-section {
     margin: 5px 0;
   }
 
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: blok;
 }
