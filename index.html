@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praktikum Minggu 4 - Layout</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+    <body>
+
+  <!-- ── NAVBAR ─────────────────────── -->
+  <nav class="navbar">
+    <div class="navbar__logo">
+      <span class="logo-icon">&#9670;</span>
+      <span class="logo-text">HanaDev</span> <br> 
+<button id="dark-toggle" class="dark-btn">🌙 Dark Mode</button>
+    </div>
+
+    <ul class="navbar__links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <div class="navbar__cta">
+      <a href="https://www.instagram.com/hnashn_?igsh=M2J2em81OWVyMnE0" target="_blank" class="btn-primary">Hire Me</a>
+    </div>
+  </nav>
+</body>
+<!-- ── HERO SECTION ────────────────── -->
+  <section class="hero" id="home">
+    <div class="hero__content">
+      <h1 class="hero__title">
+        Hi, Saya <span class="highlight">Hana Nurul Utami</span><br>
+        Web Developer
+      </h1>
+      <p class="hero__desc">
+        Menghadirkan pengembangan web yang inovatif.
+      </p>
+      <div class="hero__actions">
+        <a href="#portfolio" class="btn-primary">Lihat Portfolio</a>
+        <a href="#contact" class="btn-outline">Hubungi Saya</a>
+      </div>
+    </div>
+      
+       <div class="hero-img">
+        <img src="assets/hana.jpeg" alt="hana.jpeg">
+       </div>
+  </section>
+
+  <section class="counter-section">
+  <h2>Berapa Kali Kamu Minum Air Hari Ini?</h2>
+  <div class="counter-container">
+    <button id="btn-kurang" class="counter-btn">−</button>
+    <span id="angka-counter">0</span>
+    <button id="btn-tambah" class="counter-btn">+</button>
+  </div>
+  <p id="counter-pesan">Yuk mulai minum air!</p>
+</section>
+
+
+
+
+<!-- ── ABOUT SECTION ──────────────── -->
+  <section class="about" id="about">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+
+      <div class="skills__grid">
+
+        <div class="skill-card">
+          <h3>Halo!!</h3>
+          <p>Perkenalkan nama saya Hana Nurul Utami. 
+            Saya adalah mahasiswa prodi sistem informasi yang sedang dalam proses belajar di dunia digital.
+           Di website ini saya akan meperlihatkan apa yang sedang saya kerjakan dan pelajari selama ini </p>
+        </div>
+
+        <div class="skill-card">
+          <h3>Visi dan Misi</h3>
+          <p>Bagi saya, tugas ini mengajarkan saya untuk lebih mendalami dalam pembelajaran web untuk pembuatan Portofolio.
+             Meskipun masih dalam tahap belajar, saya bersemangat dan percaya bahwa saya pasti bisa menjadi lebih baik dan melewati setiap proses nya dengan baik.</p>
+        </div>
+
+        <div class="skill-card">
+          <h3>Hobi</h3>
+          <p>Saat saya sedang waktu luang, saya biasanya menghabiskan waktu dengan bermain dengan teman,
+             selain itu saya shopping dan travelling.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PORTFOLIO SECTION ──────────────── -->
+  <section class="portfolio" id="portfolio">
+    <div class="container">
+
+      <h2 class="section-title">My Portfolio</h2>
+      <p class="portfolio-desc">
+        Beberapa project yang sudah saya kerjakan
+      </p>
+
+      <div class="skills__grid">
+
+        <div class="skill-card">
+          <img src="assets/diagram.jpg" alt="Project 1">
+          <h3>Diagram Pemesanan Makanan</h3>
+          <p>membuat beberapa diagram seperti diagram bar chart, pie chart, histogram, dan ogive yang dikembangkan dalam Pyhton. </p>
+        </div>
+
+        <div class="skill-card">
+          <img src="assets/porto.jpg" alt="Project 2">
+          <h3>Portfolio Website</h3>
+          <p>Website portofolio ini saya buat menggunakan HTML dan CSS dengan model yang simpel tapi tetep rapi.
+             Portfolio ini saya buat selain dalam memnuhi tugas juga untuk melihat sejauh mana pengembangan diri saya dalam pembelajaran selama ini.</p>
+        </div>
+
+        <div class="skill-card">
+          <img src="assets/binary.png" alt="Project 3">
+          <h3>Binary Tree Visualization</h3>
+          <p>Binary tree project yang dibuat menggunakan python dengan konsep pegunungan</p>
+        </div>
+
+    </div>
+  </section>  
+
+<!-- ── CONTACT SECTION ──────────────── -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <h2 class="section-title">Contact</h2> <br>
+      <p class="contact-text">
+        Saya siap dalam berdiskusi dan membuat proyek baru 
+      </p>
+      
+      <div class="contact-container">
+
+        <div class="form-section">
+  <div class="form-container">
+    <input type="text" id="input-nama" placeholder="Nama lengkap" />
+    <input type="email" id="input-email" placeholder="Alamat email" />
+    <textarea id="input-pesan" placeholder="Pesan kamu..." rows="4"></textarea>
+    <button id="btn-kirim">Kirim Pesan</button>
+    <div id="form-feedback" class="feedback hidden"></div>
+  </div>
+</div>
+
+        
+        <div class="email">
+          <p>✉️ Email: </p>
+          <p>hanasiahaan27@gmail.com</p>
+        </div>
+
+      <div class="sosial">
+        <a href="https://www.instagram.com/hnashn_?igsh=M2J2em81OWVyMnE0" target="_blank">Instagram</a>
+        <a href="https://www.linkedin.com/in/hana-nurul-utami-919437334/" target="_blank">LinkedIn</a>
+        <a href="https://github.com/hana273/hana.github.io" target="_blank">Github</a>
+      </div>
+      </div>
+  </section>  
+
+      <!-- ── FOOTER ──────────────────────── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <span class="footer__brand">&#9670; HanaDev</span>
+        <p class="footer__copy">
+          &copy; 2026 Hana Nurul Utami. Dibuat dengan HTML & CSS murni.
+        </p>
+        <div class="footer__links">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#portfolio">Portfolio</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+
+<script src="script.js"></script>
+
+</body>
+</html>
